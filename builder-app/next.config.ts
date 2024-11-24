@@ -1,8 +1,8 @@
-import BuilderDevTools from "@builder.io/dev-tools/next";
-import type { NextConfig } from "next";
+const { BuilderDevTools } = require("@builder.io/dev-tools/next");
+/** @type {import('next').NextConfig} */
 
-const nextConfig: NextConfig = BuilderDevTools()({
-  /* config options here */
+const nextConfig = BuilderDevTools()({
+  // конфигурация
 });
 
-export default nextConfig;
+module.exports = nextConfig;
