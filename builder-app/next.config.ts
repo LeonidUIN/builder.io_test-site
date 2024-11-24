@@ -1,8 +1,8 @@
-const { BuilderDevTools } = require("@builder.io/dev-tools/next");
+const withBuilderDevTools = require("@builder.io/dev-tools/next")();
+
 /** @type {import('next').NextConfig} */
+const nextConfig = {
+  // конфигурация Next.js
+};
 
-const nextConfig = BuilderDevTools()({
-  // конфигурация
-});
-
-module.exports = nextConfig;
+module.exports = withBuilderDevTools(nextConfig);
